@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site sobre chá</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&         display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tilt+Warp&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
        @keyframes nav {
             33% {color: #74A651;}
 
-            66% {color:#01402E;}
+            75% {color:#01402E;}
 
             100% {color:#064131;}
        }
@@ -31,44 +34,132 @@
             height: 70px;
             background-color: white;
             justify-content: space-between;
-            padding-left: 100px;
-            padding-right   : 100px;
-            box-shadow: rgba(17, 12, 46, 0.041) 0px 10px 100px 0px;
+            padding-left: 4vw;
+            padding-right   : 4vw;
+        box-shadow: rgba(99, 99, 99, 0.137) 0px 3px 0px 0px;
         }
         nav {
             display: flex;
             
         }
         a {
-            color: #c4eb9d;
+            color: #aed685;
             text-decoration: none;
             font-family: "Cookie", cursive;
             font-size: 2em;
             margin: auto 0;
             padding: 10px;
+            white-space: nowrap;
+            text-shadow: #84c453 0px 1px 0px;
         }
-        a:hover  {
+        a:hover , a:focus ,a:active{
             animation-name: nav;
             animation-delay: 150ms;
             animation-duration: 2s;
             animation-timing-function: ease;
+            animation-direction: alternate;
 
         }
         strong {
             color: #74A651;
         }
-        h1 {
-            color: #01261C  ;
-            font-family: sans-serif ;
+        .h1-inicio {
+            font-family: "Tilt Warp", sans-serif;
+            font-weight: 600;
+            color: #064131;
             text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%);
-            transform: translateY(-50%);
+            margin-top: 70px;
         }
-        article {
-            height: 400px;
+        .h2-inicio {
+            font-family: "Lexend", sans-serif;
+            text-align: center;
+            font-weight: 200;
+            font-size: 1em;
+            transition: 200ms linear;
+        }
+        .h2-inicio:hover ,.h2-inicio:focus{
+            transform: scale(1.05);
+            cursor: zoom-in;
+        }
+        .h2-inicio > em {
+            font-weight: 200;
+            line-height: 2em;
+        }
+        button {
+            height: 60px;
+            width: 100px;
+            justify-items: center;
+            display: block;
+            margin: auto;
+            margin-top: 40px;
+            font-size: 1em;
+            border-radius: 20px;
+            border: none;
+            background-color: #74A651;
+            color: white;
+            transition: 200ms ease;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        button:hover, button:focus {
+            transform: scale(1.1);
+            background-color: #3d5a28;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        .divisao-inicio {
+            height: 50vh;
+        }
+        .divisao-meio {
+            margin-top:100px;
+            height: 500px;
+        }
+        img {
+            height: 20%;
+            width: 20%;
+            display: inline-block;
+            margin-left: 20px;
+            border-radius: 5px;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        .div-uma {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            
+        }
+        .h1-meio {
+            font-family: "Tilt Warp", sans-serif;
+            text-align: center;
+            margin-top: 20vh;
+            font-weight: 100;
+            color: #74A651;
+            transition: 200ms ease;
+        }
+        .h1-meio:hover {
+            transform: scale(1.1);
+        }
+        .p-meio {
+            display: block;
+            margin-left: 20px;
+            font-size: 2vw;
+            font-family: "Lexend", sans-serif;
+            font-weight: 200;
+        }
+        strong {
+            font-weight: 100;
+        }
+        .h2-meio {
+            text-align: center;
+        }
+        .p-baixo {
+            text-align: center;
+            font-family: "Lexend", sans-serif;
+            font-size: 2vw;
+            font-weight: 100;
+            margin-top: 50px;
+        }
+        footer {
+            text-align: center;
+            background-color: #3d5a28;
         }
     </style>
 </head>
@@ -84,10 +175,25 @@
         </nav>
     </header>
     <main>
-        <article>
-            <h1>COMPRE O MELHOR CHÁ DO <strong>MUNDO!</strong></h1>
+        <article class="divisao-inicio">
+                <h1 class="h1-inicio">COMPRE O MELHOR CHÁ DO <strong>MUNDO!</strong></h1>
+                <h2 class="h2-inicio">sendo entregue direto na sua casa por apenas por <em>19,99</em></h2>
+            <div class="bt"><button>comprar</button></div>
+            <h1 class="h1-meio">é <strong>saudavel</strong> ?</h1>
+            <h2 class="h2-meio">&DownArrow;</h2>
+        </article>
+        <article class="divisao-meio">
+            <span class="div-uma">
+                <img src="imagens/idosa.png"
+                    alt="">
+                    <p class="p-meio">-sim,nós somos totalmente saudaveis  <br>e além de sermos saudaveis contribuimos <br>para o fator da felicidade <br> sendo  totalmente gostoso</p>
+          </span>
+          <p class="p-baixo"> rebecca speawburns</p>
+        </article>
+        <article class="divisao-baixo">
         </article>
     </main>
+    <footer> site criado por luiz gustavo &copy;</footer>
     
 </body>
 </html>
