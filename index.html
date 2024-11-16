@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site sobre chá</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&         display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tilt+Warp&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&         display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tilt+Warp&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
        @keyframes nav {
             33% {color: #74A651;}
@@ -60,7 +60,7 @@
             animation-direction: alternate;
 
         }
-        strong {
+        .strong {
             color: #74A651;
         }
         .h1-inicio {
@@ -68,7 +68,7 @@
             font-weight: 600;
             color: #064131;
             text-align: center;
-            margin-top: 70px;
+            margin-top: 20vh;
         }
         .h2-inicio {
             font-family: "Lexend", sans-serif;
@@ -78,7 +78,7 @@
             transition: 200ms linear;
         }
         .h2-inicio:hover ,.h2-inicio:focus{
-            transform: scale(1.05);
+            transform: scale(1.02);
             cursor: zoom-in;
         }
         .h2-inicio > em {
@@ -113,8 +113,8 @@
             height: 500px;
         }
         img {
-            height: 20%;
-            width: 20%;
+            height: 140px;
+            width: 200px;
             display: inline-block;
             margin-left: 20px;
             border-radius: 5px;
@@ -124,7 +124,11 @@
             display: flex;
             margin: auto;
             justify-content: center;
+            transition: 200ms ease;
             
+        }
+        .div-uma:hover {
+            transform: scale(1.1);
         }
         .h1-meio {
             font-family: "Tilt Warp", sans-serif;
@@ -140,7 +144,7 @@
         .p-meio {
             display: block;
             margin-left: 20px;
-            font-size: 2vw;
+            font-size: 1em;
             font-family: "Lexend", sans-serif;
             font-weight: 200;
         }
@@ -161,6 +165,12 @@
             text-align: center;
             background-color: #3d5a28;
         }
+        .ativo {
+            color: #064131;
+        }
+        .a-1 {
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
@@ -169,16 +179,16 @@
 
         <div class="logo">CHÁ</div>
         <nav>
-            <a href="#">home</a>
-            <a href="#">tomar chá</a>
+            <a href="index.html" class="ativo">home</a>
+            <a href="comprar.html">tomar chá</a>
             <a href="#">ajuda</a>
         </nav>
     </header>
     <main>
         <article class="divisao-inicio">
-                <h1 class="h1-inicio">COMPRE O MELHOR CHÁ DO <strong>MUNDO!</strong></h1>
+                <h1 class="h1-inicio">COMPRE O MELHOR CHÁ DO <span class="strong">MUNDO!</span></h1>
                 <h2 class="h2-inicio">sendo entregue direto na sua casa por apenas por <em>19,99</em></h2>
-            <div class="bt"><button>comprar</button></div>
+        <div class="bt"><a href="comprar.html" class="a-1"><button>comprar</button></a></div>
             <h1 class="h1-meio">é <strong>saudavel</strong> ?</h1>
             <h2 class="h2-meio">&DownArrow;</h2>
         </article>
