@@ -68,19 +68,25 @@
             color: #064131;
         }
         .imagem-c {
-            height: 150px;
-            width: 150px;
+            height: 180px;
+            width: 180px;
             border-radius: 15px;
-            margin: 25px;
+            margin: auto auto;
             display: flex;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
         .container {
-            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            outline: 1px rgba(0, 0, 0, 0.651);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             background-color: #ffffff;
-            display: block;
+            display: inline-block;
             width: 200px;
-            margin: auto;
+            margin-top: 40px;
+            margin-right: 5px;
+            margin-left: 5px;
             border-radius: 20px;
+            padding: 20px;
+            height: 300px;
 
         }
         .preço {
@@ -88,15 +94,33 @@
             font-family: "Lexend", sans-serif;
             font-weight: 200;
             font-size: 0.9em;
+            margin-bottom: 30px;
         }
         .titulo-c {
             font-family: "Lexend", sans-serif;
             font-weight: 300;
             text-align: center;
+            padding: 10px;
         }
         .btn {
             display: block;
             margin: auto;
+            width: 150px;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            transition: 150ms ease;
+            
+        }
+        .btn:hover, .btn:focus {
+            transform: scale(1.05);
+            background-color: #84c453;
+            color: white;
+        } 
+        .divisao-inicio {
+            display: flex;
+            justify-content: center;
+            height: 1400px;
         }
     </style>
 </head>
@@ -118,6 +142,13 @@
                 <div class="titulo-c">Chá de maldivas</div>
                 <div class="preço"><em>19,99R$</em></div>
                 <button class="btn"> comprar</button>
+            </div>
+
+            <div class="container">
+                <img src="imagens/cha2.png" alt="" class="imagem-c">
+                <div class="titulo-c">chá de ervas doce</div>
+                <div class="preço">25,55R$</div>
+                <button class="btn">comprar</button>
             </div>
         </div>
     </main>
